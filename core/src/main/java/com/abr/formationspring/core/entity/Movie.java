@@ -1,6 +1,9 @@
 package com.abr.formationspring.core.entity;
 
-import jakarta.persistence.*;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GenerationType;
+import org.springframework.data.annotation.Id;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +12,7 @@ import java.util.List;
 public class Movie {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+            (strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false,length = 20)
     private String title;
