@@ -3,7 +3,6 @@ package com.abr.formationspring.core.entity;
 
 import jakarta.persistence.*;
 
-
 @Entity
 public class Review {
 

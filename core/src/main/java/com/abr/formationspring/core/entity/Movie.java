@@ -1,7 +1,7 @@
 package com.abr.formationspring.core.entity;
 
-
 import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
