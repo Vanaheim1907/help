@@ -3,7 +3,6 @@ package com.abr.formationspring.core.service;
 
 import com.abr.formationspring.core.entity.Movie;
 import com.abr.formationspring.core.repository.MovieRepositoryInterface;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
