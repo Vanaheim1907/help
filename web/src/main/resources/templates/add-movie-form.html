@@ -28,7 +28,6 @@
     <p>Description</p>
     <p><textarea rows="4" cols="50" th:field="*{description}"/></p>
     <div th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></div>
-
     <input type="submit" value="Ajouter"/>
 </form>
 

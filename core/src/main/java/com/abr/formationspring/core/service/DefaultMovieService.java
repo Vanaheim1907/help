@@ -28,18 +28,15 @@ public class DefaultMovieService implements MovieServiceInterface {
 
     @Override
     public Movie getMovieById(long id) {
-        Optional<Movie> optionalMovie = movieRepository.findById(id);
-        if (optionalMovie.isEmpty()) {
+        Optional<Movie> optionalMovie=movieRepository.findById(id);
+        if (optionalMovie.isEmpty()){
             throw new NoSuchElementException();
         }
-        Movie movie = optionalMovie.get();
-        //Initialize proxys
-        movie.getMainActor().getFirstName();
-        movie.getReviews().forEach(review -> {
-            review.getMark();
-            review.setMovie(null);
-        });
-        //
+        Movie movie=optionalMovie.get();
+
+        movie.getReviews().forEach(review ->
+                review.setMovie(null)
+        );
 
         return movie;
     }
